@@ -1,0 +1,202 @@
+.indContainer {
+    height : calc(97vh);
+}
+
+.imageview {
+    height: 100%;
+    
+    padding-top : 10px;
+    background-image: url("IMG_2489.jpg");
+    
+
+
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagetext {
+    color : white;
+    padding-top : 250px;
+}
+
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size : 40px;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size : 40px;
+    color: rgb(255, 0, 0);
+    word-spacing : 20px;
+}
+
+.about {
+    color : black;
+    font-size : 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+    border: 0px solid #ddd;
+    border-radius: 0px;
+    padding-top: 20px;
+   
+    max-width: 80%;
+    height: auto;
+}
+
+buttn {
+    padding-right : 30px;
+}
+
+.prog {
+    
+    width : 90%
+}
+
+.fa {
+    padding: 5px;
+    font-size: 18px;
+    width: 25px;
+    height : 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: rgb(40, 88, 192);
+    color: white;
+}
+.fa-google {
+    background: rgb(219, 16, 16);
+    color: white;
+}
+.fa-skype {
+    background: rgb(27, 119, 240);
+    color: white;
+}
+
+.fa-github {
+    background: rgb(5, 5, 5);
+    color: white;
+}
+
+.projecttable {
+    text-align: center;
+    margin : 0px;
+}
+.projectimg {
+
+        border: 0px solid #ddd;
+        border-radius: 0px;
+        padding: 0px;
+        align : center;
+       
+        max-width: 20%;
+        height: auto;
+}
+
+.cardcontain {
+    align : center;
+    text-align: center;
+}
+
+.contactcard {
+    max-width :70%;
+    height : 35%;
+    align :center;
+}
+
+.contactsocial {
+    max-width :70%;
+    height : 15%;
+}
+.contactform {
+    padding-left : 50px;
+    align :center;
+}
+
+.adress {
+    padding-top : 5px;
+}
+
+.toolscard {
+    max-width :80%;
+    height : 180%;
+    padding-left : 20px;
+    
+}
+
+.toolicons {
+    font-size : 40px;
+}
+
+.toolscardtest {
+    max-width : 80%;
+    height : 180%;
+    align : center;
+    
+    
+   
+}
+
+.padding {
+    align : center;
+    padding-left : 100px;
+    height : 140%;
+    max-width : 80%;
+    align : center;
+}
+
+.toolsbg {
+    background : rgb(255, 102, 0);
+
+}
+
+.aboutbg {
+    background: rgb(68, 0, 255);
+}
+
+.projectsbg {
+    background: rgb(59, 59, 59);
+}
+.projectimg {
+    width : 100%;
+    height : auto;
+}
+
+.about-btn {
+    color : white;
+   background-color:  #008CBA;
+   
+}
+.about-btn:hover {
+    color : white;
+    background-color:  #008CBA;
+}
+
+
+
+
