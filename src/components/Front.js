@@ -7,10 +7,11 @@ import '../styles/css/new_styles.css'
 class Front extends Component {
     render() {
         return <section className = "myComponent">
-                    <div className = "frontBgImage">
+                    <div className = "frontBgImage frontImage">
                     <div className = "frontText">
-                        <p className = "frontTextStyle1"> I am </p>
-                        <p className = "frontTextStyle2"> Developer</p>
+                    <pre> <p className = "front frontalign"> `I Am` </p>
+                        <p className = "front frontalign">&lt;/Developer;&gt;</p></pre>
+                        
                     </div>
                     </div>
                 </section>

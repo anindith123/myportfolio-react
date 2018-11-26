@@ -27,9 +27,9 @@ class Project extends Component {
     render() {
         let data = this.props.projdat
         return <div>
-            <div className="card  col-lg-12 col-md-10 col-sm-8 centerAlign" style={{ width: '400px' }}>
-                <img className="card-img-top" src={image} alt="Card image" />
-                <div className="card-body">
+            <div className="card col-sm-3 col-md-10 centerAlign" style={{ width: '100%' }}>
+                <iframe className="card-img-top iframethumb ifram centerAlign" src={data['git_link']} scrolling="no" frameBorder="0" sandbox="allow-scripts" overflow = "hidden">Your browser doesnot support this feature</iframe>
+                <div className="card-body centerAlign">
                     <h4 className="card-title">{data ? data['title'] : "Loading..."}</h4>
                     <p className="card-text">{data ? data['short_desc'] : "Loading..."}</p>
                     <button type="button" className="btn btn-primary" onClick={this.handleShow}>see more</button>
@@ -46,7 +46,7 @@ class Project extends Component {
                     <b>Tools:</b><p>{data ? data['tools'] : "Loading..."}</p>
                 </Modal.Body>
                 <Modal.Footer>
-                    <button href={data ? data['git_link'] : "Loading..."} className="btn btn-primary">Github</button>
+                    <a type= "button" href={data['git_link']} target="_blank" className="btn btn-primary">Visit</a>
                     <button className="btn btn-primary" onClick={this.handleClose}>Close</button>
                 </Modal.Footer>
             </Modal>

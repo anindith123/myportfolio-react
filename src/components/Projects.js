@@ -17,7 +17,7 @@ class Projects extends Component {
     }
 
     djangoReq() {
-        axios.get('http://127.0.0.1:8000/projects/')
+        axios.get('https://cors-escape.herokuapp.com/https://arcane-plateau-44585.herokuapp.com/projects/')
         .then(function (response) {
             let x = response.data;
             this.setState({projdata : x }, () => {console.log("$$$$");});
@@ -33,8 +33,8 @@ class Projects extends Component {
     render() {
          return <section className="projectsBg">
                     <p className="componentHeading" style = {{color:'white'}}> Projects</p><br />
-                    <div ref="project_div" className="card-columns col-lg-12 col-md-8 col-sm-6 centerAlign">
-                    {this.state.projdata.map((proj) => <Project projdat = {proj}/>)}
+                    <div ref="project_div" className="card-columns col-sm-3 col-md-12 centerAlign">
+                    {this.state.projdata.map((proj, key) => <Project projdat = {proj} key={proj.id}/>)}
                     </div>
                 </section>
     }

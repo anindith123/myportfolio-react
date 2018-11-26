@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import '../styles/css/bootstrap.min.css'
 import '../styles/css/new_styles.css'
-import image from '../styles/css/profilepic.JPG'
+import image from '../styles/css/newprofilepic.JPG'
 import Aboutintro from './Aboutintro.js'
 import Aboutskills from './Aboutskills.js'
 import Aboutexp from './Aboutexp.js'
+import {Link} from 'react-router-dom'
 
 class About extends Component {
     constructor(props) {
@@ -24,7 +25,7 @@ class About extends Component {
     }
     skillsClick() {
         this.setState({
-            btn: 'skills'
+            btn: 'edu'
         });
     }
     expClick() {
@@ -35,6 +36,9 @@ class About extends Component {
 
     render() {
         console.log(this.state.btn)
+        console.log(this.state.btn === "intro");
+        let myclass = "btn aboutButton".concat(' ', (this.state.btn === "intro") ? "active" : "notactive"); //str1.concat(' ', str2)
+        console.log(myclass)
         return <section className="">
             <div className="container">
                 <p className="componentHeading"> About Me </p><br />
@@ -42,22 +46,22 @@ class About extends Component {
                 <div className="row">
                     <div className="col-sm-4">
                         <center><img src={image} /><br /><br />
-                            <a href="#" className="btn aboutButton" role="button">Resume</a></center>
+                            <Link to="/resume" className="btn aboutButton" role="button">Resume</Link></center><br/>
                     </div>
                     <div className="col-sm-8">
                         <table className="table table condenced">
                             <tbody>
                                 <tr className = "centerAlign">
-                                    <td><a onClick={this.introClick} className="btn aboutButton" role="button" style = {{color:'white'}} >Intro</a></td>
-                                    <td><a onClick={this.skillsClick} className="btn aboutButton" role="button" style = {{color:'white'}}>skills</a></td>
-                                    <td><a onClick={this.expClick} className="btn aboutButton" role="button" style = {{color:'white'}}>experience</a></td>
+                                    <td><a onClick={this.introClick} className={"btn aboutButton".concat(' ', (this.state.btn === "intro") ? "active" : "notactive")} role="button" style = {{color:'white'}} >Intro</a></td>
+                                    <td><a onClick={this.skillsClick} className={"btn aboutButton".concat(' ', (this.state.btn === "edu") ? "active" : "notactive")} role="button" style = {{color:'white'}}>Education</a></td>
+                                    <td><a onClick={this.expClick} className={"btn aboutButton".concat(' ', (this.state.btn === "exp") ? "active" : "notactive")} role="button" style = {{color:'white'}}>Experience</a></td>
                                 </tr>
                             </tbody>
                         </table>
                          {(() => {
                             switch (this.state.btn) {
                                 case "intro": return <Aboutintro />;
-                                case "skills": return <Aboutskills />;
+                                case "edu": return <Aboutskills />;
                                 case "exp": return <Aboutexp />;
 
                             }

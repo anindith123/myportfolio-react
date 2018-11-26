@@ -1,3 +1,20 @@
+.front { font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+     color: rgb(255, 0, 0);
+    word-spacing : 10px;
+    
+    font-size: 55px; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 700; line-height: 40.7px; 
+} 
+
+.frontalign {
+    vertical-align: middle;
+    text-align : center;
+    
+}
+
+
 a:hover {
     cursor:pointer;
    }
@@ -10,6 +27,19 @@ a:hover {
     height : calc(80vh);
 }
 
+.ifram {
+    max-width: 100%;
+    align : center;
+    position : relative;
+    width : 1px;
+    min-width : 100%;
+    width : 100px;
+    height : 1px;
+    min-height : 100%;
+    height : 200px;
+    
+}
+
 .toolsComponent {
     height : calc(65vh);
 }
@@ -20,13 +50,44 @@ a:hover {
     text-align : center;
 }
 
+.aboutthisHeading {
+    font-size : 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align : center;
+    padding-top: 40px;
+}
+
+.aboutthis {
+    font-size : 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align : left;
+    padding-left : 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+}
+
 .frontBgImage {
     height: 100%;
     padding-top : 10px;
-    background-image: url("IMG_2489.jpg"); 
+    width : auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.frontImage {
+    background-image: url('Snapseed.jpg'); 
+}
+@media only screen and (min-width: 600px){
+    .frontImage{
+        background-image: url("IMG_2489.jpg");
+    }
+    .frontalign{
+        padding-top: 50px;
+        text-align : left;
+        margin-left: 35px;
+
+    }
 }
 
 .frontText {
@@ -34,30 +95,17 @@ a:hover {
     padding-top : 250px;
 }
 
-.frontTextStyle1 {
-    font-family: 'Indie Flower', cursive;
-    font-size : 40px;
-    padding-left : 160px;
-}
-
-.frontTextStyle2 {
-    font-family: 'Indie Flower', cursive;
-    font-size : 40px;
-    color: rgb(255, 0, 0);
-    word-spacing : 20px;
-    padding-left : 160px;
-}
 
 .centerAlign {
     text-align : center;
-    align : center;
+    margin: auto;
 }
 
 img {
     border: 0px solid #ddd;
     border-radius: 0px;
     padding-top: 20px;
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -67,14 +115,23 @@ img {
    width : 100px;
    
 }
+.active {
+    border : 2px red;
+    opacity: 1;
+}
+.notactive {
+    opacity: 0.6;
+    
+}
 
 .aboutButton:hover {
-    color : red;
+    radius: blue;
 
 }
 
 .toolsBg {
     background : rgb(255, 102, 0);
+
 }
 
 .toolsPadding {
@@ -93,24 +150,31 @@ img {
     font-size : 40px;
     }
 
+.toolImg {
+    height : 60px;
+    align : center;
+    margin-top: -42px;
+}
+
 .projectsBg {
     background: rgb(59, 59, 59);
     }
 
 .contactForm {
-    padding-left : 50px;
-    align :center;
+    width :90%;margin: auto;
     }
 
 .contactCard {
-    max-width :70%;
+    width :90%;
     height : 35%;
-    align :center;
+    margin: auto;
+   
     }
 
 .contactSocials {
-    max-width :70%;
+    max-width :90%;
     height : 15%;
+    margin: auto;
     }
 
 .contactSocialIcons {
@@ -153,3 +217,6 @@ img {
         background: rgb(5, 5, 5);
         color: white;
     }
+
+
+
