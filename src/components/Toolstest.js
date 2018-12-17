@@ -3,7 +3,7 @@ import '../styles/css/bootstrap.min.css'
 import '../styles/css/new_styles.css'
 import firebase from '../styles/css/firebase.png'
 import postman from '../styles/css/postman.png'
-import flask from '../styles/css/flask.png'
+import vscode from '../styles/css/xcode.png'
 
 class Toolstest extends Component {
     render() {
@@ -47,10 +47,11 @@ class Toolstest extends Component {
             <div className="card col-sm-3 col-md-12" style={{ width: '100%' }}>
             <div className="card-body">
                 <h5 className="card-title centerAlign">Tools</h5>
-                <pre><p className="card-text cardcontain"><i data-toggle="tooltip" title="Visual Studio" className="devicon-visualstudio-plain colored toolIcons"></i>&nbsp;
+                <pre><p className="card-text cardcontain">
                                                 <i data-toggle="tooltip"  title="git"  className="devicon-git-plain-wordmark toolIcons"></i>&nbsp;
-                                                
-                                                <img title="postman" className="toolImg" src={postman}></img></p></pre>
+                                                <img title="vs code" className="toolImg" src={vscode} alt="vscode icon"></img>&nbsp;
+                                                <img title="postman" className="toolImg" src={postman} alt="postman icon"></img>&nbsp;
+                                                <i data-toggle="tooltip"  title="webpack"  className="devicon-webpack-plain colored toolIcons"></i></p></pre>
             </div>
             </div>
 
@@ -67,7 +68,7 @@ class Toolstest extends Component {
             <div className="card-body">
                 <h5 className="card-title centerAlign">Deployment</h5>
                 <pre><p className="card-text cardcontain"><i data-toggle="tooltip" title="heroku"  className="devicon-heroku-original toolIcons"></i>&nbsp;
-                                                    <img title="firebase" className="toolImg" src={firebase}></img>
+                                                    <img title="firebase" className="toolImg" src={firebase} alt="firebase icon"></img>
                                                 </p></pre>
             </div>
             </div>

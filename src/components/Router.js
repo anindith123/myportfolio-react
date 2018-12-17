@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../styles/css/bootstrap.min.css'
 import '../styles/css/new_styles.css'
 import {Route, Switch} from 'react-router-dom'

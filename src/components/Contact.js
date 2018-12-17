@@ -5,7 +5,7 @@ import '../styles/css/new_styles.css'
 
 class Contact extends Component {
     render() {
-        return <section calssName = "centercontact">
+        return <section className = "centercontact">
         <p className="componentHeading">Contact</p><br />
             <p className = "centerAlign">  If you find my profile intresting wanted to know more about me or leave a feedback you can fill the form or contact me </p>
 <div className="centercontact">
@@ -18,14 +18,14 @@ class Contact extends Component {
                         </div><br />
                         <div className="from-group">
                             <label> Email </label>
-                            <input type="email" className="form-control" placeholder="Name" />
+                            <input type="email" className="form-control" placeholder="Email" />
                         </div><br />
                         <div className="from-group">
                             <label> message </label>
                             <textarea className="form-control" ></textarea>
                         </div><br />
                         <div className="from-group">
-                            <center><input type="submit"  onClick="#" className="btn btn-primary" value="submit" /></center>
+                            <center><input type="submit" className="btn btn-primary" value="submit" /></center>
                         </div>
 
                     </form><br/>
@@ -42,10 +42,10 @@ class Contact extends Component {
                     
                     <div className="card contactSocials">
                         <div className="card-body centerAlign"><div><pre>
-                        <a href={"https://www.linkedin.com/in/anindith-reddy-bujala-a12056154/"} target="_blank" className="fa fa-linkedin"></a>&nbsp;
-                            <a href={"https://github.com/anindith123"} target="_blank" className="fa fa-github"></a>&nbsp;
-                            <a href={"https://www.facebook.com/anindith"} target="_blank" className="fa fa-facebook"></a>&nbsp;
-                            <a href={"https://plus.google.com/u/1/109423117544218514844"}  target="_blank" className="fa fa-google"></a></pre>
+                        <a href={"https://www.linkedin.com/in/anindith-reddy-bujala-a12056154/"} target="_blank" rel="noopener noreferrer" className="fa fa-linkedin"></a>&nbsp;
+                            <a href={"https://github.com/anindith123"} target="_blank" rel="noopener noreferrer" className="fa fa-github"></a>&nbsp;
+                            <a href={"https://www.facebook.com/anindith"} target="_blank" rel="noopener noreferrer" className="fa fa-facebook"></a>&nbsp;
+                            <a href={"https://plus.google.com/u/1/109423117544218514844"}  target="_blank" rel="noopener noreferrer" className="fa fa-google"></a></pre>
                             
                         </div></div>
                     </div>

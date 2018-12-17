@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/css/bootstrap.min.css'
 import '../styles/css/new_styles.css'
-import image from '../styles/css/newprofilepic.JPG'
+import dispimg from '../styles/css/newprofilepic.JPG'
 import Aboutintro from './Aboutintro.js'
 import Aboutskills from './Aboutskills.js'
 import Aboutexp from './Aboutexp.js'
@@ -35,26 +35,22 @@ class About extends Component {
     }
 
     render() {
-        console.log(this.state.btn)
-        console.log(this.state.btn === "intro");
-        let myclass = "btn aboutButton".concat(' ', (this.state.btn === "intro") ? "active" : "notactive"); //str1.concat(' ', str2)
-        console.log(myclass)
         return <section className="">
             <div className="container">
                 <p className="componentHeading"> About Me </p><br />
 
                 <div className="row">
                     <div className="col-sm-4">
-                        <center><img src={image} /><br /><br />
+                        <center><img className="aboutImg" src={dispimg} alt="anindith profilepic"/><br /><br />
                             <Link to="/resume" className="btn aboutButton" role="button">Resume</Link></center><br/>
                     </div>
                     <div className="col-sm-8">
                         <table className="table table condenced">
                             <tbody>
                                 <tr className = "centerAlign">
-                                    <td><a onClick={this.introClick} className={"btn aboutButton".concat(' ', (this.state.btn === "intro") ? "active" : "notactive")} role="button" style = {{color:'white'}} >Intro</a></td>
-                                    <td><a onClick={this.skillsClick} className={"btn aboutButton".concat(' ', (this.state.btn === "edu") ? "active" : "notactive")} role="button" style = {{color:'white'}}>Education</a></td>
-                                    <td><a onClick={this.expClick} className={"btn aboutButton".concat(' ', (this.state.btn === "exp") ? "active" : "notactive")} role="button" style = {{color:'white'}}>Experience</a></td>
+                                    <td><button onClick={this.introClick} className={"btn aboutButton".concat(' ', (this.state.btn === "intro") ? "active" : "notactive")}  style = {{color:'white'}} >Intro</button></td>
+                                    <td><button onClick={this.skillsClick} className={"btn aboutButton".concat(' ', (this.state.btn === "edu") ? "active" : "notactive")}  style = {{color:'white'}}>Education</button></td>
+                                    <td><button onClick={this.expClick} className={"btn aboutButton".concat(' ', (this.state.btn === "exp") ? "active" : "notactive")}  style = {{color:'white'}}>Experience</button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -63,6 +59,8 @@ class About extends Component {
                                 case "intro": return <Aboutintro />;
                                 case "edu": return <Aboutskills />;
                                 case "exp": return <Aboutexp />;
+                            default:
+                             return <Aboutintro/>;
 
                             }
                         })()}

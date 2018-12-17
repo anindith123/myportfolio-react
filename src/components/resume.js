@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import '../styles/css/bootstrap.min.css'
 import '../styles/css/new_styles.css'
-import resume from '../styles/css/Anindith Reddy Resume pdf-1.jpg'
+import resume from '../styles/css/Anindith Reddy Resume-1.jpg'
 import {Link} from 'react-router-dom'
-import resume_file from '../styles/css/Anindith Reddy Resume pdf.pdf'
+import resume_file from '../styles/css/Anindith Reddy Resume.pdf'
 
 class Resume extends Component {
     constructor(props) {
@@ -42,7 +42,7 @@ class Resume extends Component {
                         </ul>
                 </div>
     </nav> 
-            <center><img src={resume} style={{height:"55%", width:"85%"}}/>
+            <center><img src={resume} style={{height:"55%", width:"85%"}} alt="Anindith Reddy resume"/>
 </center>
 </div>
     }

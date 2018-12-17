@@ -50,20 +50,24 @@ a:hover {
     text-align : center;
 }
 
+.abouthisComponent{
+    width : 100%;
+}
+
 .aboutthisHeading {
     font-size : 25px;
     font-family: 'Source Sans Pro', sans-serif;
     text-align : center;
     padding-top: 40px;
+    font-weight: 650;
 }
 
 .aboutthis {
     font-size : 20px;
     font-family: 'Source Sans Pro', sans-serif;
     text-align : left;
-    padding-left : 150px;
-    padding-right: 150px;
-    padding-top: 50px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .frontBgImage {
@@ -101,12 +105,22 @@ a:hover {
     margin: auto;
 }
 
-img {
+.aboutImg {
     border: 0px solid #ddd;
     border-radius: 0px;
     padding-top: 20px;
     max-width: 60%;
     height: auto;
+
+}
+
+.projectImg {
+    width: 100%;
+    height: 40%;
+    
+
+    margin: auto;
+
 }
 
 .aboutButton {
@@ -217,6 +231,11 @@ img {
         background: rgb(5, 5, 5);
         color: white;
     }
-
+.loading {
+    display: block;
+    margin: 0 auto;
+    color:white;
+    align:center;
+}
 
 
