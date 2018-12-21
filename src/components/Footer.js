@@ -4,8 +4,8 @@ import '../styles/css/new_styles.css'
 
 class Footer extends Component {
     render() {
-    return <section className = "toolsBg" >
-            <center> <pre style ={{marginBottom: '0px'}}>&copy; 2018-2019 Anindith Reddy Bujala</pre></center>
+    return <section className = "footer" >
+            <pre style ={{marginBottom: '0px'}}>&copy; 2018-2019 Anindith Reddy Bujala</pre>
         </section>
     }
 }

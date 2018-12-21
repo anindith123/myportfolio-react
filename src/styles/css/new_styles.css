@@ -1,19 +1,9 @@
-.front { font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
-     color: rgb(255, 0, 0);
-    word-spacing : 10px;
-    
-    font-size: 55px; 
-    font-style: normal; 
-    font-variant: small-caps; 
-    font-weight: 700; line-height: 40.7px; 
-} 
-
-.frontalign {
-    vertical-align: middle;
+/* golobal styling */
+.componentHeading {
+    font-size : 40px;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align : center;
-    
 }
-
 
 a:hover {
     cursor:pointer;
@@ -23,52 +13,20 @@ a:hover {
     height : calc(97vh);
 }
 
-.aboutComponent {
-    height : calc(80vh);
-}
-
-.ifram {
-    max-width: 100%;
-    align : center;
-    position : relative;
-    width : 1px;
-    min-width : 100%;
-    width : 100px;
-    height : 1px;
-    min-height : 100%;
-    height : 200px;
-    
-}
-
-.toolsComponent {
-    height : calc(65vh);
-}
-
-.componentHeading {
-    font-size : 40px;
-    font-family: 'Source Sans Pro', sans-serif;
+.centerAlign {
     text-align : center;
+    margin: auto;
 }
 
-.abouthisComponent{
-    width : 100%;
-}
-
-.aboutthisHeading {
-    font-size : 25px;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align : center;
-    padding-top: 40px;
-    font-weight: 650;
-}
-
-.aboutthis {
-    font-size : 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align : left;
-    padding-right: 5%;
-    padding-left: 5%;
-}
+/*----------------Front image and text design--------------------------*/
+.front { font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+     color: rgb(255, 0, 0);
+    word-spacing : 10px;
+    font-size: 55px; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 700; line-height: 40.7px; 
+} 
 
 .frontBgImage {
     height: 100%;
@@ -82,6 +40,7 @@ a:hover {
 .frontImage {
     background-image: url('Snapseed.jpg'); 
 }
+/*-------------media query for front bacground image for small screen size---------*/
 @media only screen and (min-width: 600px){
     .frontImage{
         background-image: url("IMG_2489.jpg");
@@ -99,27 +58,30 @@ a:hover {
     padding-top : 250px;
 }
 
+.frontalign {
+    vertical-align: middle;
+    
+}
 
-.centerAlign {
-    text-align : center;
-    margin: auto;
+
+/* styling of about me*/
+
+.aboutComponent {
+    height : calc(80vh);
+}
+
+.aboutImgBlock {
+    display:grid;
+
 }
 
 .aboutImg {
     border: 0px solid #ddd;
     border-radius: 0px;
     padding-top: 20px;
-    max-width: 60%;
+    max-width: 80%;
     height: auto;
-
-}
-
-.projectImg {
-    width: 100%;
-    height: 40%;
-    
-
-    margin: auto;
+    margin:auto;
 
 }
 
@@ -127,8 +89,10 @@ a:hover {
     color : white;
    background-color: rgb(63, 62, 62);
    width : 100px;
+   margin:auto;
    
 }
+
 .active {
     border : 2px red;
     opacity: 1;
@@ -143,99 +107,146 @@ a:hover {
 
 }
 
+/*styling of tools component*/
+
+.toolsComponent {
+    height : calc(65vh);
+}
 .toolsBg {
     background : rgb(255, 102, 0);
 
 }
-
 .toolsPadding {
     padding-left : 100px;
     height : 140%;
     max-width : 80%;
 }
-
 .toolsCard {
     max-width : 80%;
     height : 180%;
     align : center;
     }
-
 .toolIcons {
     font-size : 40px;
     }
-
 .toolImg {
     height : 60px;
     align : center;
     margin-top: -42px;
 }
 
+/*----------------------------------styling of project component --------------------------------*/
+.projectImg {
+    width: 100%;
+    height: 40%;
+    margin: auto;
+}
 .projectsBg {
     background: rgb(59, 59, 59);
-    }
-
-.contactForm {
-    width :90%;margin: auto;
-    }
-
-.contactCard {
-    width :90%;
-    height : 35%;
-    margin: auto;
-   
-    }
-
-.contactSocials {
-    max-width :90%;
-    height : 15%;
-    margin: auto;
-    }
-
-.contactSocialIcons {
-    padding-left: 50px;
 }
-
-    .fa {
-        padding: 5px;
-        font-size: 18px;
-        width: 25px;
-        height : 25px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-    }
-    
-    .fa:hover {
-        opacity: 0.7;
-    }
-    
-    .fa-facebook {
-        background: #3B5998;
-        color: white;
-    }
-    
-    .fa-linkedin {
-        background: rgb(40, 88, 192);
-        color: white;
-    }
-    .fa-google {
-        background: rgb(219, 16, 16);
-        color: white;
-    }
-    .fa-skype {
-        background: rgb(27, 119, 240);
-        color: white;
-    }
-    
-    .fa-github {
-        background: rgb(5, 5, 5);
-        color: white;
-    }
 .loading {
-    display: block;
-    margin: 0 auto;
-    color:white;
-    align:center;
+     display: block;
+     margin: 0 auto;
+     color:white;
+     align:center;
+    }
+
+    /*-----------------------------------styling contact component--------------------------*/
+.contactForm {
+        width :90%;margin: auto;
+        }
+    
+.contactCard {
+        width :90%;
+        height : 35%;
+        margin: auto;
+       
+        }
+    
+.contactSocials {
+        max-width :90%;
+        height : 15%;
+        margin: auto;
+        }
+/* ---------social media icons in contact------------*/
+.contactSocialIcons {
+        padding-left: 50px;
+    }
+    
+        .fa {
+            padding: 5px;
+            font-size: 18px;
+            width: 25px;
+            height : 25px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        
+        .fa-linkedin {
+            background: rgb(40, 88, 192);
+            color: white;
+        }
+        .fa-google {
+            background: rgb(219, 16, 16);
+            color: white;
+        }
+        .fa-skype {
+            background: rgb(27, 119, 240);
+            color: white;
+        }
+        
+        .fa-github {
+            background: rgb(5, 5, 5);
+            color: white;
+        }
+
+ /*-------------------------styling of about this page-----------------------*/       
+.abouthisComponent{
+    width : 90%;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:50px auto 0px auto;
 }
+
+.aboutthisHeading {
+    font-size : 25px;
+    font-weight: 650;
+    text-align: center;
+}
+
+.aboutthis {
+    font-size : 20px;
+}
+
+/*------------footer----*/
+
+.footer{
+background : rgb(255, 102, 0);
+text-align:center;
+margin-top:40px;
+}
+
+.resume{
+    display:grid;
+}
+
+.resumeImg{
+    margin:auto;
+}
+
+
+
+
+
+
 
 

@@ -42,8 +42,9 @@ class Resume extends Component {
                         </ul>
                 </div>
     </nav> 
-            <center><img src={resume} style={{height:"55%", width:"85%"}} alt="Anindith Reddy resume"/>
-</center>
+    <div className="resume">
+            <img className="resumeImg" src={resume} style={{ width:"85%"}} alt="Anindith Reddy resume"/>
+    </div>
 </div>
     }
 }

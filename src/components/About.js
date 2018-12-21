@@ -35,14 +35,16 @@ class About extends Component {
     }
 
     render() {
-        return <section className="">
+        return <section>
             <div className="container">
                 <p className="componentHeading"> About Me </p><br />
 
                 <div className="row">
                     <div className="col-sm-4">
-                        <center><img className="aboutImg" src={dispimg} alt="anindith profilepic"/><br /><br />
-                            <Link to="/resume" className="btn aboutButton" role="button">Resume</Link></center><br/>
+                        <div className="container aboutImgBlock">
+                            <img className="aboutImg" src={dispimg} alt="anindith profilepic"/><br /><br />
+                            <Link to="/resume" className="btn aboutButton" role="button">Resume</Link><br/>
+                        </div>
                     </div>
                     <div className="col-sm-8">
                         <table className="table table condenced">
