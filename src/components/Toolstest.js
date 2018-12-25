@@ -39,7 +39,8 @@ class Toolstest extends Component {
              <div className="card-body centerAlign">
                 <h5 className="card-title centerAlign">Design</h5>
                 <pre><p className="card-text cardcontain"><i data-toggle="tooltip" title="html5"  className="devicon-html5-plain colored toolIcons"></i>&nbsp;
-                                                <i data-toggle="tooltip" title="css3"  className="devicon-css3-plain colored toolIcons"></i>
+                                                <i data-toggle="tooltip" title="css3"  className="devicon-css3-plain colored toolIcons"></i>&nbsp;
+                                                <i data-toggle="tooltip" title="sass" class="devicon-sass-original colored toolIcons"></i>
                 </p></pre>
             </div>
              </div>
