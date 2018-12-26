@@ -48,7 +48,7 @@ class Projects extends Component {
           loading={this.state.loading}
         />
       </div></center>
-                    <div ref="project_div" className="card-columns col-sm-3 col-md-12 centerAlign">
+                    <div ref="project_div" className="card-columns col-sm-12 col-md-12 centerAlign">
                     {this.state.projdata.map((proj, index) => <Project projdat = {proj} key={index}/>)}
                     </div>
                 </section>

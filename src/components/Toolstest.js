@@ -9,8 +9,8 @@ class Toolstest extends Component {
     render() {
         return <section className = "toolsBg centerAlign">
             <p className = "componentHeading">Tools & Technologies</p><br/>
-            <div ref="project_div" className="card-columns centerAlign col-sm-3 col-md-12">
-            <div className="card col-sm-3 col-md-12" style={{ width: '100%' }}>
+            <div ref="project_div" className="card-columns centerAlign col-sm-12 col-md-12">
+            <div className="card col-sm-12 col-md-12" style={{ width: '100%' }}>
             <div className="card-body centerAlign">
                 <h5 className="card-title centerAlign">Languages</h5>
                 <pre><p className="card-text cardcontain"><i data-toggle="tooltip" title="C"  className="devicon-c-plain colored toolIcons"></i>&nbsp;
@@ -21,7 +21,7 @@ class Toolstest extends Component {
                     
             </div>
             </div>
-            <div className="card col-sm-3 col-md-12" style={{ width: '100%' }}>
+            <div className="card col-sm-12 col-md-12" style={{ width: '100%' }}>
             <div className="card-body">
                 <h5 className="card-title centerAlign">Frameworks/Environments</h5>
                 <pre><p className="card-text cardcontain"><i data-toggle="tooltip" title="react"  className="devicon-react-original colored toolIcons"></i>&nbsp;
@@ -35,7 +35,7 @@ class Toolstest extends Component {
             </div>
             </div>
 
-             <div className="card col-sm-3 col-md-12" style={{ width: '100%' }}>
+             <div className="card col-sm-12 col-md-12" style={{ width: '100%' }}>
              <div className="card-body centerAlign">
                 <h5 className="card-title centerAlign">Design</h5>
                 <pre><p className="card-text cardcontain"><i data-toggle="tooltip" title="html5"  className="devicon-html5-plain colored toolIcons"></i>&nbsp;
@@ -45,7 +45,7 @@ class Toolstest extends Component {
             </div>
              </div>
 
-            <div className="card col-sm-3 col-md-12" style={{ width: '100%' }}>
+            <div className="card col-sm-12 col-md-12" style={{ width: '100%' }}>
             <div className="card-body">
                 <h5 className="card-title centerAlign">Tools</h5>
                 <pre><p className="card-text cardcontain">
@@ -56,7 +56,7 @@ class Toolstest extends Component {
             </div>
             </div>
 
-            <div className="card col-sm-3 col-md-12" style={{ width: '100%' }}>
+            <div className="card col-sm-12 col-md-12" style={{ width: '100%' }}>
             <div className="card-body">
                 <h5 className="card-title centerAlign">Database</h5>
                 <pre><p className="card-text cardcontain"><i data-toggle="tooltip" title="mongoDB"  className="devicon-mongodb-plain-wordmark colored toolIcons"></i>&nbsp;
@@ -65,7 +65,7 @@ class Toolstest extends Component {
             </div>
             </div>
 
-            <div className="card col-sm-3 col-md-12" style={{ width: '100%' }}>
+            <div className="card col-sm-12 col-md-12 " style={{ width: '100%' }}>
             <div className="card-body">
                 <h5 className="card-title centerAlign">Deployment</h5>
                 <pre><p className="card-text cardcontain"><i data-toggle="tooltip" title="heroku"  className="devicon-heroku-original toolIcons"></i>&nbsp;

@@ -8,6 +8,7 @@ import ShoppingCart from '../styles/css/ShoppingCart.jpg';
 import StoresRESTAPI from '../styles/css/StoresRESTAPI.jpg';
 import BurgerOrder from '../styles/css/BurgerOrder.jpg';
 import CollegeManagementSystem from '../styles/css/CollegeManagementSystem.jpg';
+import WeatherData from '../styles/css/weatherData.jpg';
 
 
 
@@ -23,7 +24,8 @@ class Project extends Component {
             'ShoppingCart' : ShoppingCart,
             'StoresRESTAPI' : StoresRESTAPI,
             'BurgerOrder' : BurgerOrder,
-            'CollegeManagementSystem' : CollegeManagementSystem
+            'CollegeManagementSystem' : CollegeManagementSystem,
+            'WeatherData': WeatherData
 
         }
         };
@@ -42,7 +44,7 @@ class Project extends Component {
         let data = this.props.projdat
         let projimg = this.state.projimg[data['title']]
         return <div>
-            <div className="card col-sm-3 col-md-10 centerAlign" style={{ width: '100%' }}>
+            <div className="card col-sm-12 col-md-12 centerAlign" style={{ width: '100%' }}>
                 <img className="card-img-top projectImg" src={projimg} alt="project view"/>
                 <div className="card-body centerAlign">
                     <h4 className="card-title">{data ? data['title'] : "Loading..."}</h4>
