@@ -2,9 +2,22 @@ import React, {Component} from 'react';
 import '../styles/css/bootstrap.min.css'
 import '../styles/css/new_styles.css'
 import {Link} from 'react-router-dom'
-
+import ReactGA from 'react-ga';
 
 class Aboutthis extends Component {
+    constructor(props) {
+        super(props);
+        this.initializeReactGA = this.initializeReactGA.bind(this);
+    }
+
+    initializeReactGA() {
+        ReactGA.initialize('UA-132336151-1');
+        ReactGA.pageview('/resume');
+    }
+
+    componentDidMount() {
+        this.initializeReactGA();
+    }
     render() {
         return <section>
         <div>
@@ -35,7 +48,8 @@ React with jsx implemented for rendering the website design.</li>
 <li> Various bootstrap components and fetures are implemented in the design of this website. </li>
 <li> Implemented React-Router for navigation between pages.</li>
 <li>ES6 JavaScript is used for functional components of the page.</li>
-<li>React state is used to keep track of the operations in the page.</li></ul>
+<li>React state is used to keep track of the operations in the page.</li>
+<li>Integrated google analytics with "react-ga" for user and event tracking</li></ul>
 
 <h4 className="aboutthisHeading">Backend</h4><br/>
 <ul>

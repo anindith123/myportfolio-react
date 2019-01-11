@@ -6,6 +6,7 @@ import Aboutintro from './Aboutintro.js'
 import Aboutskills from './Aboutskills.js'
 import Aboutexp from './Aboutexp.js'
 import {Link} from 'react-router-dom'
+import ReactGA from 'react-ga';
 
 class About extends Component {
     constructor(props) {
@@ -19,19 +20,31 @@ class About extends Component {
 
     }
     introClick() {
-        this.setState({
+     this.setState({
             btn: 'intro'
         });
+        ReactGA.event({
+            category: 'about',
+            action: 'intro clicked'
+          });
     }
     skillsClick() {
         this.setState({
             btn: 'edu'
         });
+        ReactGA.event({
+            category: 'about',
+            action: 'edu clicked'
+          });
     }
     expClick() {
         this.setState({
             btn: 'exp'
         });
+        ReactGA.event({
+            category: 'about',
+            action: 'exp clicked'
+          });
     }
 
     render() {
